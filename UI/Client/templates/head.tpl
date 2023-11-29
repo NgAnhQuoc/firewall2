@@ -1,0 +1,2 @@
+<link href="{$WEB_ROOT}/modules/servers/vietnix_firewall2/UI/Public/css/client.css" rel="stylesheet" type="text/css" />
+<script src="{$WEB_ROOT}/modules/servers/vietnix_firewall2/UI/Public/js/client.js"></script>

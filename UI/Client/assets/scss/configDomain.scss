@@ -1,0 +1,109 @@
+.sslmode,
+.sslstatus {
+  position: relative;
+  border-radius: 999px;
+  padding: 4px 12px 4px 16px;
+  line-height: 14px;
+  background: transparent;
+
+  &:before {
+    top: 7px;
+    left: 0px;
+    position: absolute;
+    content: " ";
+    height: 9px;
+    width: 9px;
+    background: #8c9cb5;
+    border-radius: 50%;
+  }
+
+  &.sslmode-none {
+    color: #6C798F;
+
+    &:before {
+      background: #6C798F;
+    }
+  }
+
+  &.sslmode-flexible {
+    color: #38A7FF;
+
+    &:before {
+      background: #38A7FF;
+    }
+  }
+
+  &.sslmode-full,
+  &.active {
+    color: #27AE60;
+
+    &:before {
+      background: #27AE60;
+    }
+  }
+
+  &.expired {
+    color: #EB5757;
+
+    &:before {
+      background: #EB5757;
+    }
+  }
+
+  &.pending {
+    color: #ffc107;
+
+    &:before {
+      background: #ffc107;
+    }
+  }
+
+  &.none {
+    color: #6C798F;
+
+    &:before {
+      background: #6C798F;
+    }
+  }
+}
+
+#alertMsg {
+  .error {
+    color: #EB5757;
+    border-color: #EB5757;
+  }
+
+  .warning {
+    color: #ffc107;
+    border-color: #ffc107;
+  }
+
+  .info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+  }
+
+  .success {
+    color: #28a745;
+    border-color: #28a745;
+  }
+}
+
+input[type="radio"]:checked+span {
+  color: #38A7FF;
+}
+
+input:checked~.dot {
+  transform: translateX(70%);
+  background-color: #48bb78;
+}
+
+input[type=checkbox]:not(:checked)+div {
+  transition-duration: 150ms !important;
+  background: white !important;
+  border: 1px solid #C7C9D9 !important;
+}
+
+input[type=checkbox]:not(:checked)~.dot {
+  box-shadow: 0px 1px 2px rgba(40, 41, 61, 0.2), 0px 2px 4px rgba(96, 97, 112, 0.2) !important;
+}
